@@ -49,4 +49,27 @@ $(document).ready(function(){
         })
     });
 
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите Ваше имя",
+                phone: "Пожалуйста, введите Ваш телефон",
+                email: {
+                    required: "Пожалуйста, введите Ваш email",
+                    email: "Неправильно введен email"
+                }
+            }
+        });
+    };
+    validateForms('#consultation-form');
+    validateForms('#order form');
+    validateForms('#consultation form');
 });
