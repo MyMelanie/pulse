@@ -72,4 +72,17 @@ $(document).ready(function(){
     validateForms('#consultation-form');
     validateForms('#order form');
     validateForms('#consultation form');
+
+
+    $('input[name=phone]').mask("+7 (999) 999-9999");
+
+    //Smooth scroll and pageup
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1600){
+            $('.pageup').fadeIn();
+        } else {{
+            $('.pageup').fadeOut();
+        }
+    }
+    });
 });
