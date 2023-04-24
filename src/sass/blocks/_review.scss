@@ -1,0 +1,32 @@
+.review {
+    margin-bottom: 48px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__info {
+        margin-left: 61px;
+    }
+    &__client-info {
+        color: #0D0D0D;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__marathon {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        color: #0D0D0D;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+}
